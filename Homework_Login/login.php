@@ -26,21 +26,22 @@ if (isset($_POST["btnHome"])) {
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel=stylesheet type="text/css" href="css/test.css">
 	<link rel=stylesheet type="text/css" href="css/bootstrap.css">
 	<title>Lab - Login</title>
 </head>
-<body>
-
+<body id="BG">
+  
 <form id="form1" name="form1" method="post" action="login.php" class="form-horizontal" >
  
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">帳號</label>
+    <label for="inputEmail3" class="col-sm-2 control-label"><font color="#FFFFFF">帳號:</font></label>
     <div class="col-sm-3">
       <input type="text" class="form-control" name="txtUserName" id="txtUserName" placeholder="User ID">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">密碼</label>
+    <label for="inputPassword3" class="col-sm-2 control-label"><font color="#FFFFFF">密碼:</font></label>
     <div class="col-sm-3">
       <input type="password" class="form-control" name="txtPassword" id="txtPassword" placeholder="Password">
     </div>
@@ -52,6 +53,7 @@ if (isset($_POST["btnHome"])) {
       <input type="submit" name="btnHome" class="btn btn-info" id="btnHome" value="回到首頁"  />
     </div>
   </div>
+  
 
 </form>
 
