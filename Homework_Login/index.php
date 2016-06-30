@@ -5,6 +5,10 @@ if(isset($_COOKIE["userName"])) {
   $userName = $_COOKIE["userName"];
 }
 
+if (!isset($_COOKIE["userName"])) {
+  setcookie("lastpage", "index.php");
+}
+
 ?>
 
 <html>
@@ -22,15 +26,15 @@ if(isset($_COOKIE["userName"])) {
 			<a href="mailto:nwps8716@gmail.com"><p id="email">Email to me.</p></a>
 		</div>
 		<div class="left">
-		  <?php if (!isset($_COOKIE["userName"])) { ?>
-      <a href="login.php">會員登入<br></a>
-      <?php } else { ?>
-      <a href="login.php?signout=1">會員登出<br></a>
-      <?php } ?>
-      <a href="secret.php">會員專區</a></td>
+		<?php if (!isset($_COOKIE["userName"])) { ?>
+      	<a href="login.php">會員登入<br></a>
+      	<?php } else { ?>
+      	<a href="login.php?signout=1">會員登出<br></a>
+      	<?php } ?>
+      	<a href="secret.php">會員專區</a></td>
 		</div>
 		<div class="right">
-		  <?php if (isset($_COOKIE["userName"])) { ?> 
+		  <?php if (isset($_COOKIE["userName"])) { ?>
 			<img src="img/cat.jpg" alt="動物-貓" class="img-circle">
 			<img src="img/dog.jpg" alt="動物-狗" class="img-circle">
 			<?php } ?>
