@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_COOKIE["userName"])) {
-  setcookie("lastPage", "secret.php");
+  setcookie("lastpage", "secret.php");
   header("location: login.php");
   exit();
 }
