@@ -9,7 +9,7 @@ if (isset($_POST["btnOK"])) {
   if ($_POST["txtUserName"] != ""){
     setcookie("userName", $_POST["txtUserName"]);
     if (isset($_COOKIE["lastpage"])) 
-    header("location:" . $_COOKIE["lastpsge"]);
+    header("location:" . $_COOKIE["lastpage"]);
     else
     header("location: index.php");
     exit();
