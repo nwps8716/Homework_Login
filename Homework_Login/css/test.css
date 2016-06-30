@@ -106,3 +106,8 @@ a:hover {
 	position: relative;
 	padding-top: 15px;
 }
+
+#BG {
+	background-image:url("../img/bg.jpg");
+　	background-repeat:no-repeat;
+}
