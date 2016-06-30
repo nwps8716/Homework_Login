@@ -87,6 +87,10 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 #footer {
 	position: relative;
 	height: 50px;
