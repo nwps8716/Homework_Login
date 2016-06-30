@@ -6,6 +6,10 @@ if (!isset($_COOKIE["userName"])) {
   exit();
 }
 
+if (isset($_POST["btnHome"])) {
+  header("location:index.php"); 
+}
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -18,19 +22,20 @@ if (!isset($_COOKIE["userName"])) {
 </head>
 <body>
 
-<table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#F2F2F2">
+<table width="600" height="200" border="0" align="center" cellpadding="5">
   <tr>
-    <td align="center" bgcolor="#CCCCCC"><font color="#FFFFFF">會員系統 － 會員專區</font></td>
+    <td height="50" align="center" bgcolor="#0fbff2"><font size="12px" color="#FFFFFF">會員系統 － 會員專區</font></td>
   </tr>
   <tr>
-    <td align="center" valign="baseline">This page for member only.</td>
-  </tr>
-  <tr>
-    <td align="center" bgcolor="#CCCCCC"><a href="index.php">回首頁</a></td> 
-    
+    <td align="center" ><font size="12px">This page for member only.</font></td>
   </tr>
 </table>
 
+<form id="form1" name="form1" method="post" action="secret.php">
+  <div align="center">
+    <input type="submit" name="btnHome" class="btn btn-info" id="btnHome" value="回到首頁"  />
+  </div>
+</form>
 
 </body>
 </html>
