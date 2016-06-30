@@ -31,8 +31,8 @@ if(isset($_COOKIE["userName"])) {
 		</div>
 		<div class="right">
 		  <?php if (isset($_COOKIE["userName"])) { ?> 
-			<img src="img/cat.jpg" alt="動物-貓" >
-			<img src="img/dog.jpg" alt="動物-狗" >
+			<img src="img/cat.jpg" alt="動物-貓" class="img-circle">
+			<img src="img/dog.jpg" alt="動物-狗" class="img-circle">
 			<?php } ?>
 		</div>
 		
